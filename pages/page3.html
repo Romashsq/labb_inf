@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 70%;
+        height: auto;
+        margin: 20px auto;
+      }
+
+      th,
+      td {
+        border: 3px solid rgb(0, 0, 0);
+        font-size: 24px;
+      }
+    </style>
+
+    <div class="container">
+      <header>
+        <div class="header-container">
+          <ul class="header-list">
+            <li>
+              <a href="../index.html">Table1</a>
+            </li>
+            <li>
+              <a href="page2.html">Table2</a>
+            </li>
+            <li>
+              <a href="page3.html">Table3</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <table>
+        <tr>
+          <td rowspan="3">1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td colspan="2" style="height: 200px">5</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>9</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

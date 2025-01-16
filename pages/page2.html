@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Nested Table</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      table {
+        border-collapse: collapse;
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+      }
+
+      th,
+      td {
+        border: 3px solid rgb(0, 0, 0);
+        font-size: 24px;
+      }
+
+      .nested-table {
+        width: 80%;
+        margin: 0 auto;
+        height: 500px;
+        margin: 40px;
+      }
+
+      .nested-table td {
+        height: auto;
+      }
+
+      .w28 {
+        width: 28%;
+      }
+
+      .w60 {
+        width: 60%;
+      }
+
+      .h200 {
+        height: 200px;
+      }
+
+      .w33 {
+        width: 33.33%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <ul class="header-list">
+          <li>
+            <a href="../index.html">Table1</a>
+          </li>
+          <li>
+            <a href="page2.html">Table2</a>
+          </li>
+          <li>
+            <a href="page3.html">Table3</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="container">
+      <table>
+        <tr>
+          <td colspan="2" style="height: 50px">1-2</td>
+          <td class="w60">3</td>
+        </tr>
+        <tr>
+          <td class="w28">4</td>
+          <td colspan="2" rowspan="2">
+            <table class="nested-table">
+              <tr>
+                <td>1</td>
+                <td rowspan="3" class="w33 h200">2</td>
+                <td rowspan="2">3</td>
+              </tr>
+              <tr>
+                <td rowspan="2">4</td>
+              </tr>
+              <tr>
+                <td>9</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>7</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
