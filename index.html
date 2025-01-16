@@ -2,11 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Third table</title>
     <link rel="stylesheet" href="css/styles.css" />
-
-    <title>Document</title>
   </head>
+
   <body>
+    <header>
+      <div class="header-container">
+        <ul class="header-list">
+          <li>
+            <a href="../index.html">Table1</a>
+          </li>
+          <li>
+            <a href="page2.html">Table2</a>
+          </li>
+          <li>
+            <a href="page3.html">Table3</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
     <style>
       table {
         border-collapse: collapse;
@@ -15,64 +32,53 @@
         margin: 20px auto;
       }
 
-      .table1 {
-        margin: 0 auto;
-        border-collapse: collapse;
-      }
-      .table1,
-      .table1 th,
-      .table1 td {
+      th,
+      td {
         border: 3px solid rgb(0, 0, 0);
         font-size: 24px;
       }
-      .table1 td {
-        width: 70px;
-        height: 70px;
-      }
     </style>
 
-    <div class="container">
-      <header>
-        <div class="header-container">
-          <ul class="header-list">
-            <li>
-              <a href="index.html">Table1</a>
-            </li>
-            <li>
-              <a href="pages/page2.html">Table2</a>
-            </li>
-            <li>
-              <a href="pages/page3.html">Table3</a>
-            </li>
-          </ul>
-        </div>
-      </header>
-      <table class="table1">
-        <tr>
+    <main class="third">
+      <table class="table-4">
+        <tr class="tr1">
           <td colspan="2">1</td>
-          <td>3</td>
-          <td>4</td>
-          <td>5</td>
-          <td rowspan="3">6</td>
+          <td colspan="1">2</td>
+          <td colspan="8" style="background-color: #ffff00">3</td>
+          <td rowspan="3">4</td>
+        </tr>
+        <tr class="tr2">
+          <td>10</td>
+          <td colspan="2" rowspan="2" style="background-color: #cc0000">11</td>
+          <td colspan="8" style="background-color: #ffff00">12</td>
+        </tr>
+        <tr class="tr3">
+          <td rowspan="2">19</td>
+          <td colspan="1">20</td>
+          <td colspan="7 "></td>
+        </tr>
+        <tr class="tr4">
+          <td rowspan="3" style="background-color: #000000">28</td>
+          <td>29</td>
+          <td colspan="8">30</td>
+          <td rowspan="5" style="background-color: #cc0000">31</td>
+        </tr>
+        <tr class="tr5">
+          <td rowspan="4" style="background-color: #ffff00">37</td>
+          <td rowspan="2">38</td>
+          <td rowspan="3" colspan="8" style="background-color: #000099">39</td>
         </tr>
         <tr>
-          <td rowspan="2">7</td>
-          <td>8</td>
-          <td colspan="3" rowspan="2">9</td>
+          <!--  -->
         </tr>
-        <tr>
-          <td>14</td>
+        <tr class="tr6">
+          <td rowspan="2">55</td>
+          <td rowspan="1" style="background-color: #000000">56</td>
         </tr>
-        <tr>
-          <td colspan="3" rowspan="2">19</td>
-          <td>22</td>
-          <td>23</td>
-          <td rowspan="2">24</td>
-        </tr>
-        <tr>
-          <td colspan="2">28</td>
+        <tr class="tr7">
+          <td colspan="9">64</td>
         </tr>
       </table>
-    </div>
+    </main>
   </body>
 </html>
